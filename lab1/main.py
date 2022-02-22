@@ -53,7 +53,19 @@ if __name__ == '__main__':
     print('Метод максимального правдоподобия')
     print('mu=' + str(m_) + ', sigma=' + str(s_))
 
-    distribution = sp.gamma.rvs(s_, size=len(selection))
+    distribution = sp.gamma.rvs(1.03567, size=len(selection))
     plot_teor_empirical(selection, distribution)
 
     plot_teor_empirical_cdf(selection, distribution)
+
+
+
+
+
+
+
+
+
+
+
+
